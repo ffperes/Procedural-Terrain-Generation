@@ -1,0 +1,17 @@
+\beamer@endinputifotherversion {3.07pt}
+\beamer@sectionintoc {1}{Background}{11}{0}{1}
+\beamer@sectionintoc {2}{The Problem being solved}{11}{0}{2}
+\beamer@subsectionintoc {2}{1}{And various sections on each piece of background}{11}{0}{2}
+\beamer@sectionintoc {3}{The Science and Technology needed to solve it}{11}{0}{3}
+\beamer@subsectionintoc {3}{1}{In various sections, describing the technological tools you'll use}{11}{0}{3}
+\beamer@sectionintoc {4}{How my system/software can be tested}{14}{0}{4}
+\beamer@sectionintoc {5}{The results of testing my system/software}{14}{0}{5}
+\beamer@sectionintoc {6}{How I might improve my project based on this evaluation}{14}{0}{6}
+\beamer@sectionintoc {7}{Summary of the Project}{14}{0}{7}
+\beamer@subsectionintoc {7}{1}{Goals}{14}{0}{7}
+\beamer@subsectionintoc {7}{2}{Outcomes}{14}{0}{7}
+\beamer@sectionintoc {8}{Conclusions Drawn from the Project}{14}{0}{8}
+\beamer@sectionintoc {9}{Introduction}{14}{0}{9}
+\beamer@sectionintoc {10}{Project outcomes}{14}{0}{10}
+\beamer@sectionintoc {11}{Project planning}{14}{0}{11}
+\beamer@sectionintoc {12}{Self-evaluation}{14}{0}{12}

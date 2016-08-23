@@ -1,0 +1,28 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Screen-shot of a dungeon map in Diablo series}}{5}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Screen-shot of a dungeon in Diablo series}}{5}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Screenshot of a terrain map in Civilization II}}{6}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Screenshot of a terrain map in Minecraft}}{6}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces How to calculate Mean and Standard Deviation}}{8}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Two-dimensional slice of perlin noise gradient extract from the code}}{9}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Regular noise}}{9}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces 3 octaves waves, Y-axis is amplitude and X-axis is frequency}}{12}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces 3 octaves waves, Y-axis is amplitude and X-axis is frequency}}{12}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces 3 octaves waves, Y-axis is amplitude and X-axis is frequency}}{13}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Lacunarity is applied to control the increase in frequency}}{13}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Persistance is applied to control the decrease in amplitude}}{14}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Creating a map of 3x3 consist of 9 vertices}}{14}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Vertices are stored in a one-dimensional array and start at vertex 0}}{15}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces All possible triangles in the map}}{15}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Calculate the length of the triangle array}}{16}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces What vertices can not create a triangule from the beginning}}{16}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Writing the vertices from 3x3 map to a one-dimension array}}{17}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Recapitulation of how the triangles are formed in the program}}{29}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Recapitulation of how the triangles are formed in the program}}{30}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Recapitulation of how the triangles are formed in the program}}{32}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }

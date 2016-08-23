@@ -1,0 +1,711 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9) (preloaded format=pdflatex 2016.8.22)  23 AUG 2016 15:51
+entering extended mode
+**./ReportTemplate.tex
+(ReportTemplate.tex
+LaTeX2e <2016/03/31> patch level 3
+Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\book.cls"
+Document Class: book 2014/09/29 v1.4h Standard LaTeX document class
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\bk12.clo"
+File: bk12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.sty"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+\lst@mode=\count88
+\lst@gtempboxa=\box26
+\lst@token=\toks15
+\lst@length=\count89
+\lst@currlwidth=\dimen103
+\lst@column=\count90
+\lst@pos=\count91
+\lst@lostspace=\dimen104
+\lst@width=\dimen105
+\lst@newlines=\count92
+\lst@lineno=\count93
+\lst@maxwidth=\dimen106
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count94
+\lst@skipnumbers=\count95
+\lst@framebox=\box27
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.cfg"
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\color.sty"
+Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 147.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def"
+File: pdftex.def 2016/07/10 v0.06j Graphics/color for pdfTeX
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count96
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\times.sty"
+Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\a4wide\a4wide.sty"
+Package: a4wide 1994/08/30
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ntgclass\a4.sty"
+Package: a4 2004/04/15 v1.2g A4 based page layout
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2016/07/10 v1.0t Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+)
+\Gin@req@height=\dimen107
+\Gin@req@width=\dimen108
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks16
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\epstopdf.sty"
+Package: epstopdf 2016/05/15 v2.6 Conversion with epstopdf on the fly (HO)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty"
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
+Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\natbib\natbib.sty"
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip43
+\bibsep=\skip44
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count97
+) (html.sty
+Package: html 1996/02/01 v1.0 hypertext commands for latex2html (nd, hs)
+\c@lpart=\count98
+\c@lchapter=\count99
+\c@lsection=\count100
+\c@lsubsection=\count101
+\c@lsubsubsection=\count102
+\c@lparagraph=\count103
+\c@lsubparagraph=\count104
+\c@lsubsubparagraph=\count105
+\c@lequation=\count106
+)
+(ReportTemplate.aux
+
+LaTeX Warning: Label `fig:pretty' multiply defined.
+
+
+LaTeX Warning: Label `fig:pretty' multiply defined.
+
+
+LaTeX Warning: Label `fig:pretty' multiply defined.
+
+
+LaTeX Warning: Label `fig:pretty' multiply defined.
+
+
+LaTeX Warning: Label `fig:pretty' multiply defined.
+
+
+LaTeX Warning: Label `fig:pretty' multiply defined.
+
+
+LaTeX Warning: Label `fig:pretty' multiply defined.
+
+
+LaTeX Warning: Label `fig:pretty' multiply defined.
+
+
+LaTeX Warning: Label `fig:pretty' multiply defined.
+
+
+LaTeX Warning: Label `fig:pretty' multiply defined.
+
+
+LaTeX Warning: Label `fig:pretty' multiply defined.
+
+
+LaTeX Warning: Label `fig:pretty' multiply defined.
+
+
+LaTeX Warning: Label `fig:pretty' multiply defined.
+
+
+LaTeX Warning: Label `fig:pretty' multiply defined.
+
+)
+\openout1 = `ReportTemplate.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 38.
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+\c@lstlisting=\count107
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count108
+\scratchdimen=\dimen109
+\scratchbox=\box28
+\nofMPsegments=\count109
+\nofMParguments=\count110
+\everyMPshowfont=\toks17
+\MPscratchCnt=\count111
+\MPscratchDim=\dimen110
+\MPnumerator=\count112
+\makeMPintoPDFobject=\count113
+\everyMPtoPDFconversion=\toks18
+)
+LaTeX Font Info:    Try loading font information for U+msa on input line 39.
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 39.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [1
+
+
+{C:/Users/Fabio/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2
+
+]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24.88> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 41.
+ [3] [4] [5
+
+]
+[6
+
+]
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ô in font ptmr7t!
+ [7] [8
+
+] (ReportTemplate.toc
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
+ [9])
+\tf@toc=\write3
+\openout3 = `ReportTemplate.toc'.
+
+ [10] (ReportTemplate.lof)
+\tf@lof=\write4
+\openout4 = `ReportTemplate.lof'.
+
+ [11
+
+] [12
+
+]
+(ReportTemplate.lot)
+\tf@lot=\write5
+\openout5 = `ReportTemplate.lot'.
+
+ [13] [14
+
+]
+Chapter 1.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 60.
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ò in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ô in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ò in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ô in font ptmr7t!
+[1] [2]
+Chapter 2.
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ò in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ô in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ò in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ô in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+[3
+
+]
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+ <diablo_series_1.jpg, id=58, 892.83563pt x 481.04718pt>
+File: diablo_series_1.jpg Graphic file (type jpg)
+
+<use diablo_series_1.jpg>
+Package pdftex.def Info: diablo_series_1.jpg used on input line 142.
+(pdftex.def)             Requested size: 369.66159pt x 199.16928pt.
+
+<diablo_series_2.jpg, id=59, 673.51625pt x 403.5075pt>
+File: diablo_series_2.jpg Graphic file (type jpg)
+
+<use diablo_series_2.jpg>
+Package pdftex.def Info: diablo_series_2.jpg used on input line 150.
+(pdftex.def)             Requested size: 332.44095pt x 199.16928pt.
+ <civ-series.png, id=60, 220.825pt x 165.61874pt>
+File: civ-series.png Graphic file (type png)
+
+<use civ-series.png>
+Package pdftex.def Info: civ-series.png used on input line 160.
+(pdftex.def)             Requested size: 265.57158pt x 199.16928pt.
+ <minecraft.jpg, id=62, 1445.4pt x 881.2925pt>
+File: minecraft.jpg Graphic file (type jpg)
+
+<use minecraft.jpg>
+Package pdftex.def Info: minecraft.jpg used on input line 170.
+(pdftex.def)             Requested size: 326.6566pt x 199.16928pt.
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ú in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ù in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ò in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ô in font ptmr7t!
+ [4] [5 <./diablo_series_1.jpg> <./diablo_series_2.jpg>]
+[6 <./civ-series.png> <./minecraft.jpg>]
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ú in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ù in font ptmr7t!
+
+<normal_distribution-chart.png, id=74, 600.74437pt x 432.86719pt>
+File: normal_distribution-chart.png Graphic file (type png)
+
+<use normal_distribution-chart.png>
+Package pdftex.def Info: normal_distribution-chart.png used on input line 204.
+(pdftex.def)             Requested size: 355.3986pt x 256.0748pt.
+ [7]
+<Detailed_Map_Noise_Example.png, id=78, 931.98187pt x 975.645pt>
+File: Detailed_Map_Noise_Example.png Graphic file (type png)
+
+<use Detailed_Map_Noise_Example.png>
+Package pdftex.def Info: Detailed_Map_Noise_Example.png used on input line 217.
+
+(pdftex.def)             Requested size: 217.42303pt x 227.62204pt.
+
+
+Package natbib Warning: Citation `(' on page 8 undefined on input line 231.
+
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+<Map_Noise_Example.png, id=79, 931.98187pt x 973.38657pt>
+File: Map_Noise_Example.png Graphic file (type png)
+
+<use Map_Noise_Example.png>
+Package pdftex.def Info: Map_Noise_Example.png used on input line 235.
+(pdftex.def)             Requested size: 217.93498pt x 227.62204pt.
+ [8 <./normal_distribution-chart.png>] [9 <./Detailed_Map_Noise_Example.png> <.
+/Map_Noise_Example.png>] [10
+
+]
+Chapter 3.
+<3noise-maps-octaves.png, id=91, 961.34157pt x 495.35063pt>
+File: 3noise-maps-octaves.png Graphic file (type png)
+
+<use 3noise-maps-octaves.png>
+Package pdftex.def Info: 3noise-maps-octaves.png used on input line 269.
+(pdftex.def)             Requested size: 441.7531pt x 227.62204pt.
+
+<3noise-maps-octaves-2.png, id=92, 961.34157pt x 495.35063pt>
+File: 3noise-maps-octaves-2.png Graphic file (type png)
+
+<use 3noise-maps-octaves-2.png>
+Package pdftex.def Info: 3noise-maps-octaves-2.png used on input line 277.
+(pdftex.def)             Requested size: 441.7531pt x 227.62204pt.
+
+<3noise-maps-octaves-3.png, id=93, 961.34157pt x 495.35063pt>
+File: 3noise-maps-octaves-3.png Graphic file (type png)
+
+<use 3noise-maps-octaves-3.png>
+Package pdftex.def Info: 3noise-maps-octaves-3.png used on input line 285.
+(pdftex.def)             Requested size: 441.7531pt x 227.62204pt.
+
+<3noise-maps-octaves-4.png, id=94, 958.3303pt x 505.13719pt>
+File: 3noise-maps-octaves-4.png Graphic file (type png)
+
+<use 3noise-maps-octaves-4.png>
+Package pdftex.def Info: 3noise-maps-octaves-4.png used on input line 293.
+(pdftex.def)             Requested size: 431.8442pt x 227.62204pt.
+
+<3noise-maps-octaves-5.png, id=95, 961.34157pt x 496.10344pt>
+File: 3noise-maps-octaves-5.png Graphic file (type png)
+
+<use 3noise-maps-octaves-5.png>
+Package pdftex.def Info: 3noise-maps-octaves-5.png used on input line 301.
+(pdftex.def)             Requested size: 441.07832pt x 227.62204pt.
+
+<mesh_research_1.png, id=96, 750.55406pt x 452.4403pt>
+File: mesh_research_1.png Graphic file (type png)
+
+<use mesh_research_1.png>
+Package pdftex.def Info: mesh_research_1.png used on input line 312.
+(pdftex.def)             Requested size: 377.60097pt x 227.62204pt.
+
+<mesh_research_2.png, id=97, 750.55406pt x 452.4403pt>
+File: mesh_research_2.png Graphic file (type png)
+
+<use mesh_research_2.png>
+Package pdftex.def Info: mesh_research_2.png used on input line 320.
+(pdftex.def)             Requested size: 377.60097pt x 227.62204pt.
+
+<mesh_research_3.png, id=98, 750.55406pt x 452.4403pt>
+File: mesh_research_3.png Graphic file (type png)
+
+<use mesh_research_3.png>
+Package pdftex.def Info: mesh_research_3.png used on input line 328.
+(pdftex.def)             Requested size: 377.60097pt x 227.62204pt.
+
+<mesh_research_5.png, id=99, 750.55406pt x 452.4403pt>
+File: mesh_research_5.png Graphic file (type png)
+
+<use mesh_research_5.png>
+Package pdftex.def Info: mesh_research_5.png used on input line 337.
+(pdftex.def)             Requested size: 377.60097pt x 227.62204pt.
+
+<mesh_research_6.png, id=100, 750.55406pt x 452.4403pt>
+File: mesh_research_6.png Graphic file (type png)
+
+<use mesh_research_6.png>
+Package pdftex.def Info: mesh_research_6.png used on input line 345.
+(pdftex.def)             Requested size: 377.60097pt x 227.62204pt.
+
+<mesh_research_7.png, id=101, 750.55406pt x 452.4403pt>
+File: mesh_research_7.png Graphic file (type png)
+
+<use mesh_research_7.png>
+Package pdftex.def Info: mesh_research_7.png used on input line 353.
+(pdftex.def)             Requested size: 377.60097pt x 227.62204pt.
+ [11] [12 <./3noise-maps-octaves.png> <./3noise-maps-octaves-2.png>] [13 <./3no
+ise-maps-octaves-3.png> <./3noise-maps-octaves-4.png>] [14 <./3noise-maps-octav
+es-5.png> <./mesh_research_1.png>] [15 <./mesh_research_2.png> <./mesh_research
+_3.png>] [16 <./mesh_research_5.png> <./mesh_research_6.png>] [17 <./mesh_resea
+rch_7.png>] [18
+
+]
+Chapter 4.
+[19]
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 417.
+
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1pcr.fd"
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ò in font ptmr7t!
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ô in font ptmr7t!
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [20]
+[21]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [22]
+[23]
+Overfull \hbox (78.0177pt too wide) in paragraph at lines 601--602
+[][][][][][][][][][][][][][][]  
+ []
+
+
+Overfull \hbox (78.0177pt too wide) in paragraph at lines 605--606
+[][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (5.74779pt too wide) in paragraph at lines 609--610
+[][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (97.72644pt too wide) in paragraph at lines 610--611
+[][][][][][][][][][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [24]
+[25] [26] [27]
+Underfull \vbox (badness 4647) has occurred while \output is active []
+
+ [28]
+File: mesh_research_6.png Graphic file (type png)
+
+<use mesh_research_6.png>
+Package pdftex.def Info: mesh_research_6.png used on input line 821.
+(pdftex.def)             Requested size: 330.39369pt x 199.16928pt.
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+ [29]
+File: mesh_research_7.png Graphic file (type png)
+ <use mesh_research_7.png>
+Package pdftex.def Info: mesh_research_7.png used on input line 832.
+(pdftex.def)             Requested size: 330.39369pt x 199.16928pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [30]
+Overfull \hbox (113.99696pt too wide) in paragraph at lines 876--877
+[]\OT1/ptm/m/n/12 A quick ex-pla-na-tion about UV map ex-tract from the on-line
+ source http://blenderartists.org/forum/archive/index.php/t-
+ []
+
+File: mesh_research_5.png Graphic file (type png)
+<use mesh_research_5.png>
+Package pdftex.def Info: mesh_research_5.png used on input line 890.
+(pdftex.def)             Requested size: 330.39369pt x 199.16928pt.
+Missing character: There is no ‚ in font ptmr7t!
+Missing character: There is no Ä in font ptmr7t!
+Missing character: There is no ì in font ptmr7t!
+ [31] [32] [33] [34
+
+]
+Chapter 5.
+[35] [36]
+Chapter 6.
+[37
+
+] [38
+
+] [39] [40]
+Chapter 7.
+
+Underfull \vbox (badness 1648) has occurred while \output is active []
+
+ [41
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [42]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [43]
+[44]
+Overfull \hbox (78.0177pt too wide) in paragraph at lines 1191--1192
+[][][][][][][][][][][][][][][]  
+ []
+
+
+Overfull \hbox (78.0177pt too wide) in paragraph at lines 1195--1196
+[][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (5.74779pt too wide) in paragraph at lines 1199--1200
+[][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (97.72644pt too wide) in paragraph at lines 1200--1201
+[][][][][][][][][][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [45]
+[46] [47] [48] [49] [50] (ReportTemplate.bbl [51] [52
+
+])
+Underfull \hbox (badness 10000) in paragraph at lines 1446--1447
+
+ []
+
+
+Overfull \hbox (116.64139pt too wide) in paragraph at lines 1449--1450
+\OT1/ptm/m/n/12 the 2nd Work-shop on Pro-ce-du-ral Con-tent Gen-er-a-tion in Ga
+mes. web-site http://julian.togelius.com/Togelius2011What.pdf
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1449--1450
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1451--1452
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1453--1454
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1455--1456
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1457--1458
+
+ []
+
+
+Package natbib Warning: There were undefined citations.
+
+[53] (ReportTemplate.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 3988 strings out of 493334
+ 56809 string characters out of 3136672
+ 177251 words of memory out of 3000000
+ 7421 multiletter control sequences out of 15000+200000
+ 28020 words of font info for 68 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 42i,6n,40p,623b,1531s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Progra
+m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program F
+iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program File
+s (x86)/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program Files (x86)/M
+iKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/f
+onts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/
+urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/u
+tmri8a.pfb>
+Output written on ReportTemplate.pdf (67 pages, 2795434 bytes).
+PDF statistics:
+ 269 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 91 words of extra memory for PDF output out of 10000 (max. 10000000)
+

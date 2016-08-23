@@ -1,0 +1,31 @@
+\begin{thebibliography}{}
+
+\bibitem[Author et~al., 1927]{ArticleA}
+Author, A., Author, A.~S., and Author, A.~T. (1927).
+\newblock The title of the paper.
+\newblock {\em The name of the journal}, 1(1):1--100.
+
+\bibitem[Author and Co-author, 1352]{BookB}
+Author, A.~D. and Co-author, A. (1352).
+\newblock {\em The book they wrote}.
+\newblock London University Press, London, UK.
+
+\bibitem[Author, 2009]{CollectedC}
+Author, J.~O. (2009).
+\newblock Just one chapter of many.
+\newblock In Editor, O. and Editor, A., editors, {\em The Collection of
+  chapters}. Another University Press, Somewhere, New York.
+
+\bibitem[Bloke, 1904]{MiscD}
+Bloke, S. (1904).
+\newblock My web site.
+\newblock {\tt www.foo.bar}; Last accessed: 10/10/1904.
+
+\bibitem[Kuhn et~al., 2008]{KuhnScottAndreev2008}
+Kuhn, R., Scott, R., and Andreev, L. (2008).
+\newblock An introduction to using {\TeX} in the {H}arvard {M}athematics
+  {D}epartment.
+\newblock {\tt http://www.math.harvard.edu/texman/texman.html}; Last accessed:
+  18/01/2008.
+
+\end{thebibliography}

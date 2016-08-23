@@ -1,0 +1,1000 @@
+\documentclass{beamer}
+\usepackage{pgfpages}
+%\pgfpagesuselayout{resize to}[a5paper,border shrink=0mm,portrait]
+%\pgfpagesuselayout{2 on 1}[a4paper,border shrink=5mm]
+\usepackage{beamerthemesplit}
+\usepackage{verbatim}
+\usepackage{hyperlatex}
+\input{people.tex}
+\logo{\includegraphics[height=1cm]{sigma.png}}
+\title{Linear Schemas for Program Dependence}
+\author{Sebastian Danicic}
+\date{\today}
+%\setbeamercolor{title}{fg=red!80!black,bg=red!20!white}
+%\usecolortheme{seahorse}
+%\usecolortheme{rose}
+%\usetheme{Warsaw}
+%\usetheme{Frankfurt}
+%\usetheme{AnnArbor}     
+%\usetheme{Ilmenau} %nice
+%\usetheme{Antibes} %nice     
+%\usetheme{JuanLesPins}
+%\usetheme{Bergen}  %nope!      
+%\usetheme{Luebeck} %nope!
+%\usetheme{Berkeley} %hmmm    
+\usetheme{Madrid} %best so far
+%\usetheme{Berlin}       
+%\usetheme{Malmoe}
+%\usetheme{Boadilla} %very clean     
+%\usetheme{Marburg}
+%\usetheme{boxes}  %same as madrid      
+%\usetheme{Montpellier}
+%\usetheme{CambridgeUS}  %very nice simple and red
+%\usetheme{PaloAlto}
+%\usetheme{Copenhagen}   
+%\usetheme{Pittsburgh}
+%\usetheme{Darmstadt}    
+%\usetheme{Rochester}
+%\usetheme{default}      
+%\usetheme{Singapore}
+%\usetheme{Dresden}      
+%\usetheme{Szeged}
+%\usetheme{Frankfurt}    
+%\usetheme{Warsaw}
+%\usetheme{Goettingen}   
+%\usetheme{Hannover}
+
+%\usefonttheme[onlylarge]{structuresmallcapsserif}
+
+\begin{document}
+
+\section{Introduction}
+
+\frame{\titlepage}
+
+%\section[Outline]{}
+%\frame{\tableofcontents}
+
+
+\begin{frame}
+\frametitle{First Schema Meeting 21 Nov 2006}
+
+Vague Agenda: \begin{tabular}{ll}
+            10-10.30: &Coffee etc.\\
+	    10.30-11.15: &Sebastian Danicic: Intro to Schemas Project\\
+	    11.15-12.00:& Mike Laurence: A History of Schemas: Results and\\
+	     &Open Problems\\
+	    12.00-1.15: &Lunch (probably in College)\\
+	    1.15-1.30: &``Is that the Post Office Tower?'' \\
+	    &(Traditional Circuit of Goldsmiths)\\\\\\	
+	    1.30-4:& Future Work - Discussion\\
+	    4-6: &Drinking in the Hobgoblin Pub\\
+	    6- & Eating in The Thailand, 15 Lewisham Way
+	    \end{tabular}
+\end{frame}
+
+
+
+\begin{frame}
+%\begin{center}
+\frametitle{Linear Schemas for Program Dependence~ EP/E002919/1 
+}
+%Value:& {\pounds}301,452\\
+\begin{center}
+\uncover<1->{\includegraphics[height=1cm]{epsrc.jpg}}
+\end{center}
+
+\begin{center}
+\uncover<2->{\includegraphics[height=1cm]{gold.jpg}}
+\uncover<3->{\includegraphics[height=1cm]{kings.png}}
+\uncover<4->{ \includegraphics[height=1cm]{brunel.png}}
+\uncover<5->{\includegraphics[height=1cm]{essex.png}}
+\uncover<6->{\includegraphics[height=1cm]{atuk.png}}
+\uncover<7->{\includegraphics[height=1cm]{atandt.png}}
+
+
+\end{center}
+	
+%\begin{semiverbatim}http://gow.epsrc.ac.uk/ViewGrant.aspx?GrantRef=EP/E002919/1\end{semiverbatim}\\
+%\end{center}	
+\end{frame}
+
+
+\begin{frame}
+%\begin{center}
+\frametitle{This Talk}
+%Value:& {\pounds}301,452\\
+
+
+\uncover<1->{History of the Schemas Project}\\
+\uncover<2->{Aims of the Schemas Project}\\
+\uncover<3->{People in the Schemas Project }\\
+\uncover<4->{Motivation - Examples from Program Slicing}\\
+\uncover<5->{Semantics of Schemas and Dataflow Minimality}\\
+\uncover<6->{Decidability of Equivalence of Schemas}\\
+\uncover<7->{Future Work}
+\end{frame}
+\section{History of Schema Theory}
+\begin{frame}
+  \frametitle{History of Schema Theory}
+ \begin{itemize}
+ \item<1->{Schema theory was introduced in the 1950s by a Russian Mathematician, 
+ Ianov. It was seen as a way of proving the correctness of compiler optimisations.}
+ 
+ \item<2->{Schemas are an abstract way of representing classes of programs
+ with identical structure.}
+
+ 
+\end{itemize}
+\end{frame}  
+
+\begin{frame}
+  \frametitle{Seminal Work on Program Schemas}
+
+Some well-known computer scientists have worked on Schemas:
+	\begin{itemize}
+	\item<2->Ianov (1960)``The Logical Schemes of Algorithms'' 
+	\item<2-> M.S. Paterson (1968) ``Program Schemata''
+	\item<2->  D.C. Cooper(1969) ``Program Scheme Equivalences and Logic''
+	\item<2-> R.Milner(1970) ``Equivalences on Program Schemes''
+	\item<2->  Ershov (1971) ``Theory of Program Schemata''
+	\item<2->  Constable and Gries(1972) ``On Classes of Program Schemata''
+	\item<2->  Garland and Luckham(1973)``Program Schemes, Recursion Schemes and Formal
+	Language''
+	\item<2->  A.K.Chandra (1973) ``On the Properties and Applications of
+	Program Schemas''
+	
+	\end{itemize}
+
+\end{frame}  
+
+
+\begin{frame}
+ \frametitle{Death of Schemas}
+ 
+\begin{center}
+\includegraphics[height=2cm]{sad.jpg}\\
+  {The subject more or less died out by the 1980s due to a lack of
+positive results.}\\
+\includegraphics[height=2cm]{rip.png}\\
+
+\end{center}
+\end{frame}  
+ 
+
+\begin{frame}[fragile,t]
+  \frametitle{History}
+
+\uncover<3>{\includegraphics[height=2cm]{ghost.png}}\\
+ \begin{itemize}
+ \item<1->{ In the 1990s, Mark and I were working on the computability of Dataflow Minimal
+ Slices.} 
+ 
+ \item<2->{Mark was at a conference and mentioned our problem to Tom Reps of
+ Wisconsin and  Tim Teitelbaum of Cornell who suggested we looked at 
+ }\only<3>{\alert<3>{Schema Theory}.}
+ \end{itemize}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{They were right!}
+\begin{itemize}
+
+\item<2-5>{For our problem it turned out we needed a class of schema in which no
+predicate or function symbol occurs more than once.} 
+
+\item<3-5>{We called these \alert{Linear} Schemas.}
+\item<4-5>{We were surprised that no work had been done on Linear Schemas.}
+\item<5>{Serendipitously, it turned out  that the linearity condition helped in proving
+decidability of equivalence of schemas. }
+\end{itemize}
+\end{frame}
+	
+
+
+\begin{frame}
+  \frametitle{Mike's Work}
+
+\begin{itemize}
+\item<1->{
+Mike proved that equivalence of conservative, free, linear
+schemas is decidable.} 
+
+\item<2->{ and in his thesis he strengthened this by proving that equivalence of
+liberal, free linear schemas is decidable in polynomial time.}
+\item<3->{
+This 
+represented significant progress in the field of schema theory after a hiatus of
+about twenty years.} 
+
+
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+But we still don't know whether dataflow minimal slices are
+computable!\\\includegraphics[height=2cm]{sad.jpg}
+
+\end{frame}
+
+\section{Aims of the Schemas Project}
+\begin{frame}
+  \frametitle{Aims of the Schemas Project}
+
+\begin{itemize}
+
+\item<1->{
+There is strong evidence that the imposition of this extra
+but natural condition of linearity (or partial forms of linearity) will lead to
+further decidability results in the theory of schemas.} 
+
+\item<2->{We hope that
+our new results will lead to a re-appraisal of the substantial body of work in
+program schema theory and to further research on its applications in a modern
+framework. \uncover<3->{\\e.g. Dataflow Minimal Slicing!}
+}
+
+\end{itemize}
+\end{frame}
+
+\section{People}
+
+
+  \begin{frame}
+\begin{center}
+People 
+\end{center}
+ \end{frame}
+
+
+%\subsubsection{Sebastian Danicic}
+
+  \begin{frame}
+ 
+\frametitle{\includegraphics[height=1.5cm]{seb.jpg} Dr. Sebastian Danicic (Principal Investigator)}
+\begin{itemize}
+\item<2->{Sebastian is a Lecturer in Computing at Goldsmiths.}
+\item<3-> His work on slicing began in the mid 1990s with work on its semantic
+foundations   and algorithms.  
+\item<4->{The Schemas project described here has grown out of the research Sebastian
+conducted during his PhD. Since then, he has supervised
+two PhDs continuing this work.} 
+\end{itemize}
+ \end{frame}
+	  
+
+%\subsubsection{Mark Harman}
+
+\begin{frame}
+\frametitle{\includegraphics[height=1.5cm]{MarkHarman.png} Prof. Mark Harman(Co--Investigator)}
+\begin{itemize}
+
+\item<2->{Mark is Professor of Software Engineering at King's College London.}
+\item<3->He is the principal investigator on a number of projects
+including one
+to design and build an industrial  program slicing and variable dependence analysis system.
+ 
+\item<4->{He is the inventor of Amorphous Slicing} 
+ 
+\item<5-> {He has also worked  on problems in software testing  
+and upon the combination of slicing, transformation
+and testing.}
+\item<6->{Mark is also well--known for his work on Search-Based Software Engineering for which he 
+has recently obtained a {\pounds}1,145,357 EPSRC grant.} 
+\item<7->{Mark used to work at Goldsmiths}
+\end{itemize}
+
+\end{frame}
+
+
+%\subsubsection{Rob Hierons}
+
+
+\begin{frame}
+\frametitle{\includegraphics[height=1.5cm]{rhierons.jpg}Prof. Rob Hierons (Co-Investigator)
+}
+\begin{itemize}
+
+\item<2-> {Rob is Professor of Computer Science at Brunel University}.
+
+\item <3->{Rob has a BA in Mathematics (Trinity College, Cambridge), and a Ph.D. in Computer Science (Brunel University)}
+
+\item<4-> {Rob has published widely in the areas of testing and software
+engineering.}
+
+   
+\item<5>{ Rob used to work at Goldsmiths}
+\end{itemize}
+
+\end{frame}
+
+
+%\subsubsection{Rob Hierons}
+
+
+\begin{frame}
+\frametitle{\includegraphics[height=1.5cm]{fox.jpg}Dr. Chris Fox}
+\begin{itemize}
+
+\item<2->{Chris is Reader in Computer Science at Essex University.}
+
+\item<3->{He has published widely in the areas of {Formal Semantics}, 
+Philosophy of Language, Business Process Modelling
+and Program Analysis.}
+
+\item<4->{Chris implemented the first conditioned slicer, ConSiT: a system
+which combines symbolic program execution with theorem proving.}
+
+\item<5>{Chris used to work at Goldsmiths}
+
+\end{itemize}
+
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{\includegraphics[height=1.5cm]{lahcen.jpg}Dr. Lahcen Ouarbya}
+\begin{itemize}
+\item<1->{Lahcen is a lecturer at Goldsmiths College.}
+\item<2->{He has a BSc in Physics from  Cadi Ayad Univesity,  Marrakech, Morocco }
+\item<3->{...an MSc in Solid State Physics  from St. Petersburg State University }
+\item<4->{and a PhD in Formal Semantics of Slicing  from Goldsmiths, (supervised by
+Sebastian,  Mark, Rob, Chris  and John).}
+\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{\includegraphics[height=1.5cm]{dave.jpg}Dr. Mohammed (Dave)
+Daoudi\includegraphics[height=1.5cm]{arab.png}}
+\begin{itemize}
+\item<1->{Dave is now studying Financial Mathematics at Imperial College.}
+
+\item<2->{Dave has a first class honours degree in Mathematics from Goldsmiths}
+
+
+\item<3->{ and a PhD in Conditioned Slicing  
+from Goldsmiths, (supervised by
+Sebastian,  Mark, Rob, Chris  and John).}
+
+\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{\includegraphics[height=1.5cm]{mike.jpg}Dr. Dr. Mike Laurence (Research Assistant)}
+\begin{itemize}
+\item<1->{Mike has {BSc in Mathematics from Queen Mary College, University of London (1st class honours)}
+an has an {MSc in Mathematics from University of Warwick}}
+\item<2->{A PhD in Group Theory from Queen Mary College} 
+\item<3->{A PhD in Schema Theory  
+from Goldsmiths, (supervised by
+Sebastian, Rob, Mark and John).}
+
+\item<4->{He has had a number of previous jobs notably as a {clothes
+sorter at an Oxfam shop near Goodge Street}}.
+\end{itemize}
+\end{frame}
+    
+
+
+
+\begin{frame}
+\frametitle{\includegraphics[height=1.5cm]{mike.jpg}Dr. Dr. Mike Laurence (Research Assistant)}
+\begin{center}
+His favourite food is:
+\\\uncover<2->{\includegraphics[height=5cm]{Pistachio.jpg}\\Pistachio Nuts!}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{\includegraphics[height=1.5cm]{john.jpg}Dr. John Howroyd (Industrial Collaborator)}
+\begin{itemize}
+\item<1->{John works as Director of Research and Development at @UK PLC.}
+\item<2->{He has a BSc in Mathematics from Oxford University and a PhD in Mathematics from St. Andrews.}
+\item<3->{His interests include Geometric Measure Theory, Harmonic Analysis,
+Isometries, Applications of Domain Theory in Computable Mathematics, and Static
+Program Analysis.}
+\item<4->{John used to work at Goldsmiths}
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{\includegraphics[height=1.5cm]{weyuker.jpg}Prof. Elaine Weyuker (Industrial Collaborator)}
+\begin{itemize}
+\item<1->{Elaine works at AT\&T Labs-â€“Research.}
+\item<2->{She has published widely in the area of schema theory and dataflow
+analysis.}
+\item<3->{She   is the originator of dataflow testing.}
+\item<4->{She is world renowned for her
+research into providing formal bases for  many areas of computer science.}
+\item<5->{Elaine isn't here :(}
+\item<6->{and ...}
+\item<7->{Elaine has no connection with Goldsmiths}
+\end{itemize}
+\end{frame}
+% 
+
+
+\begin{frame}
+\frametitle{A few of years ago...}
+  \begin{center}
+\includegraphics[height=7cm]{vastt-kcl.jpg}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{A few of years ago...}
+  \begin{center}
+\includegraphics[height=7cm]{group-ira.jpg}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{A few of years ago...}
+  \begin{center}
+\includegraphics[height=7cm]{group2p.jpg}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{A few of years ago...}
+  \begin{center}
+\includegraphics[height=7cm]{megroup.jpg}
+\end{center}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{A few of years ago...}
+  \begin{center}
+\includegraphics[height=7cm]{groupOct01.jpg}
+\end{center}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{A few of years ago...}
+  \begin{center}
+\includegraphics[height=7cm]{sgroup-dec3-2001.jpg}
+\end{center}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{A few of years ago...}
+  \begin{center}
+\includegraphics[height=7cm]{vdec2002.jpg}
+\end{center}
+\end{frame}
+
+\section{Motivation - Examples from Slicing}
+
+\begin{frame}
+\frametitle{Background -- Program Slicing}
+\begin{center}
+\includegraphics[height=4cm]{prism.png}\\
+\uncover<2->{Program Slicing gives us different views of the same program\\}
+\uncover<3>{...depending what we are interested in.}
+\end{center}
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Questions answered by Slicing}
+\begin{itemize}
+\item<1-> Which bits of big program $P$ affect the final value of variable $x$?
+\item<2-> Which bits of big program $P$ affect the updating of this file?
+\item<3-> Which bits of big program $P$ affect the firing of this missile?
+
+\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Commercial Slicing Tools: Kaveri/Indus}
+\begin{center}
+\includegraphics[height=1cm]{banner.png}\\
+
+\includegraphics[height=3cm]{slice.png}\\
+
+Kaveri is an eclipse plug-in front-end for the Indus Java slicer. It utilizes
+the Indus program slicer to calculate slices of Java programs and then displays
+the results visually in the editor. The purpose of this project is to create an
+effective tool for simplifying program understanding,  program analysis, program
+debugging and testing.
+
+\end{center} 
+
+\end{frame}
+
+
+
+
+\begin{frame}
+\frametitle{Commercial Slicing Tools: Codesurfer}
+\begin{center}
+\includegraphics[height=5cm]{BackwardSlice.png}\\
+
+{\it``The backward slice from a program point p includes all points that
+\alert<2->{may} influence
+whether control reaches p, and all points that \alert<2->{may} influence the values of the
+variables used at p when control gets there.'' 
+}\\
+\uncover<2>{What the hell does \alert<2>{may} mean?}
+\end{center}
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{The Crux of the Problem}
+\begin{itemize}
+\item<1-> Slicing algorithms are conservative: They often keep in
+bits of the program the could be left out.
+
+\item<2-> A statement that a slicing algorithm thinks may affect a variable
+often does not!
+
+\item<3-> This leads to slices that are too big. 
+
+\item<4->Small is beautiful. -- Big slices aren't very useful.
+
+\item<5-> We want to find ways of producing smaller slices.
+\end{itemize}
+\end{frame}
+
+\section{Examples}
+
+\begin{frame}
+\frametitle{Examples}
+We now give two examples showing wrong computation of dependence
+by slicing algorithms:
+\begin{itemize}
+\item<2-> The ``c becomes one'' example
+\item<3-> The ``Montreal Boat Trip'' example (John Howroyd)
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}[fragile,t]
+
+  \frametitle{The ``c becomes one'' example}
+
+Which lines of this program affect the final value of z?
+\begin{center}
+\begin{semiverbatim}
+
+     \alert<2-3,6->{while (i<k)\uncover<6,7>{\alert<6,7>{  <-----}}
+     \alert<2-3,6-> \{}
+         \alert<2->{if (c<5)} \uncover<4,5,6>{\alert<4,5,6>{  <-----}}
+         \alert<2->{\{}
+             \alert<2->{z=7;} \uncover<4>{\alert<4>{  <-----}} 
+             \alert<2-3,5,6->{c=y+c;}\uncover<5>{\alert<5>{ <-----}}
+         \alert<2->{\}}
+         \alert<2-3,7->{i=i+1;}\uncover<7>{\alert<7>{ <-----}}
+      \alert<2-3,6->{\}}
+\end{semiverbatim}
+\end{center}
+\only<1>{}
+\only<2>{Conventional Program Slicers like Codesurfer will say ``all of them!''}
+\only<3>{but why?}
+\only<4>{\alert{z=7} is {\em control--dependent} on \alert{(c$<$5)}}
+\only<5>{Because its in a loop \alert{c$<$5} is data-dependent upon \alert{c=y+c;}}
+\only<6>{The \alert{if} is control--dependent the guard of the \alert{while}}
+\only<7>{The guard of the \alert{while} is data-dependent on \alert{i=i+1}}
+\only<8>{So slicing on z gives the whole program}
+\only<9>{Slicing Algorithms compute the transitive closure of the dependence relation}
+\end{frame}
+
+
+
+
+
+
+
+\begin{frame}[fragile,t]
+
+  \frametitle{The ``c becomes one'' example}
+
+Which lines of this program affect the final value of z?
+\begin{semiverbatim}
+
+     \alert<1->{while (i<k)
+     \alert<1-> \{}
+         \alert<1->{if (c<5)}
+         \alert<1->{\{}
+             \alert<1->{z=7;}
+             \alert<1>{c=y+c;} {<-----}
+         \alert<1->{\}}
+         \alert<1->{i=i+1;}
+      \alert<1->{\}}
+\end{semiverbatim}
+\only<1>{But is z really dependent on this?}
+\only<2>{Clearly not because if we do execute c=y+c the value of z can't change any further,
+so it is irrelevant if we go through the true part of the if after that.}
+\only<3>{So Transitive closure of dependence doesn't seem to be the most accurate was of computing dependencies.}
+\only<4>{As we have seen, dependence is not transitive.}
+\end{frame}
+
+
+
+\begin{frame}[fragile,t]
+
+\frametitle{Conventional Slicing Removes Non--termination}
+
+
+\begin{semiverbatim}
+
+     while (true)
+     \{
+
+     \}
+     \alert<2-5>{z=2;}
+\end{semiverbatim}
+\only<1>{What do we get if we slice on the final value of z?}
+\only<2>{The loop is removed since z=2 is not data or control dependent on it.}
+\only<3>{So transitive closure of dependence can introduce termination.}
+\only<4->{So, formally a program $p$  and its slice $s$ need only agree in initial states where $p$ terminates.}
+\only<5->{\\So, there's an even smaller slice of this program.}
+\only<6->{\\The empty program -- all statements can be removed.}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{The Semantics of End--Slicing}
+Definition:
+
+
+
+\begin{center}
+
+
+$q$ is an \alert{end slice} of $p$ withe respect to variable $v$\\
+   if and only if\\
+for all initial states $\sigma$\\
+${\mathcal M}[\vert p \vert]\sigma \neq \bot \implies {\mathcal M}[\vert p
+\vert]\sigma v = {\mathcal M}[\vert q \vert]\sigma v$
+\mbox{}\\
+\mbox{}\\
+
+\begin{itemize}
+\item<2-> Slicing is reflexive.
+\item<3-> Slicing is transitive.
+\item<4-> Slicing is not symmetric.	
+\item<5-> Slicing is not anti-symmetric.	
+\end{itemize}
+
+\end{center}
+
+\end{frame}
+
+\begin{frame}[fragile,t]
+\frametitle{The ``Montreal Boat Trip'' example}
+  \begin{center}
+\includegraphics[height=6cm]{montrealboat.jpg}\\	
+\only<1>{Written on the white board by me at SCAM 2002 in Montreal!}
+\only<2>{I asked, `` What is the slice on variable j''}
+\only<3>{To which Ira Baxter wittily replied:}
+\end{center}
+\end{frame}
+
+
+
+
+
+\begin{frame}[fragile,t]
+\frametitle{The ``Montreal Boat Trip'' example}
+  \begin{center}
+\includegraphics[height=6cm]{fat.jpg}\\	
+{\large Who cares!}
+\end{center}
+\end{frame}
+
+
+\begin{frame}[fragile,t]
+
+\frametitle{The ``Montreal Boat Trip'' example}
+
+\only<1-6>{What is the slice on $j$ at the end of the program?}
+\only<7->{Linear Schemas}
+
+
+\begin{semiverbatim}
+     \alert<2->{while p(j)
+     \alert<2-> \{}
+         \alert<2->{if q(k) k=f(k);}
+         \alert<2->{else}
+         \alert<2->{\{}
+             \only<1-8>{\alert<2->{k=g(k);}}\only<9>{k=f(k);} \uncover<3-6>{  <-----}
+             \alert<2->{j=h(j);}
+         \alert<2->{\}}
+      \alert<2->{\}}
+\end{semiverbatim}
+\only<2>{Again, transitive closure of dependence gives the whole program.}
+\only<3>{But what about this line?}
+\only<4>{It either causes the program to non--terminate or
+increases the number of iterations of the loop before termination.}
+\only<5>{In initial states where the program terminates this line doesn't affect the final value of j.}
+\only<6>{So k=g(k) can be removed from the slice.}
+\only<7>{The program above is in fact a \alert{Schema}}
+\only<8>{it is in fact a {\em linear} Schema -because each function and
+predicate symbol
+occurs at most once} 
+\only<9>{Now it's not {\em linear} }
+\end{frame}
+
+\section{Dataflow Minimality and Semantics}
+\begin{frame}
+\frametitle{The Data Flow Minimality Problem:}
+
+\begin{itemize}
+
+\item<1->{ We have shown that transitive closure of dependence gives over--large
+slices.}
+
+
+\item<2->{Small slices are good.}
+
+
+
+
+\item<3->{So is it possible to produce \alert{minimal slices} at this level 
+of abstraction?}	
+
+\item<4->{A \alert{minimal slice} is a slice all of whose proper sub--programs
+are not slices.}	
+
+
+\end{itemize}
+\end{frame}
+
+	
+
+\begin{frame}[fragile,t]
+
+\frametitle{The Semantics of Schemas}
+
+\uncover<2->{States = [Variables $\rightarrow$ Terms] $\cup \{\bot\}$\\}
+\uncover<3->{\only<3>{(Herbrand)} Interpretations = [Terms $\rightarrow$	 \{True,False\}]\\}
+\uncover<5->{${\mathcal M}$: Schemas $\rightarrow$ Interpretations $\rightarrow$ States
+$\rightarrow$ States.}			  
+
+\begin{semiverbatim}
+\uncover<6->{ while p(j) 
+     \{
+        if q(k) k=f(k);
+        else
+         \{
+             k=g(k);
+             j=h(j);
+         \}
+     \}}
+\end{semiverbatim}
+
+\uncover<6->{Show John's Haskell Schema Interpreter readSch "boat.sch"}
+\end{frame}
+
+
+
+
+\section{Decidability of Equivalence}
+\begin{frame}[fragile,t]
+\frametitle{Decidability of Equivalence of Schemas}
+
+\begin{itemize}
+
+
+
+\item<1->{Two Schemas are equivalent if the are semantically equivalent
+under all Herbrand interpretations.}
+
+
+
+\item<2->\alert{{ 
+The Decidability of Equivalence of Schemas implies the computability
+of minimal slices.}}
+
+
+\item<3->{Why?}
+
+\item<4->{Crudely, we can simply try all combinations of deleting statements
+and check for equivalence of the resulting schema with the original.}
+
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}[fragile,t]
+\frametitle{\only<1>{The Bad News}\only<2>{Not So Bad News}\only<3>{The Good News}}
+\only<1>{Paterson (1967):}
+\only<3>{Mike Laurence (2006)}
+%{Mike Laurence :}
+
+\only<1>{\includegraphics[height=2cm]{sad.jpg}}
+\only<3>{\includegraphics[height=2cm]{smiley.png}}
+
+
+\only<1>{Equivalence of Schemas is Undecidable.}	
+\only<2>{For Linear Schemas decidability of equivalence is an open problem.}	
+\only<3>{For certain classes of Linear Schemas equivalence is decidable.}	
+
+
+
+
+\end{frame}
+
+
+
+\section{Future Work}
+
+\begin{frame}
+\frametitle{Open Problems in Decidability to Investigate}
+
+\begin{center}
+\begin{itemize}
+\item <1->{Is equivalence of free  conservative linear schemas decidable?}
+\uncover<2->{\alert{{Yes}}} 
+\item <3->{Is equivalence of free liberal linear schemas decidable?}
+\uncover<4->{\alert{Yes}} 
+\item <5->{Is equivalence of free ~~~~~~~~ linear schemas decidable?}
+\uncover<6->{\alert{Don't know}} 
+\item <7->{Is equivalence of ~~~~ ~~~~~~~~ linear schemas decidable?}
+\uncover<8->{\alert{Don't know}} 
+\item <9->{Is freeness of linear schemas decidable?}
+\uncover<10->{\alert{Don't know}} 
+\end{itemize}
+\end{center}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{More Accurate Notions of Dependency}
+\begin{center}
+\begin{itemize}
+\item <1->{A new lazy trace semantics for Schemas for general Slicing}
+\item <2->{Characterisation of Slicing in terms of this new Semantics}
+\item<3->{Investigation of Decidability of Equivalence in terms of the new
+Semantics}
+\item <4->{Extending the Syntax and Semantics of Linear Schemas to handle
+more features e.g. functions and procedures.}
+\item <5->{New algorithms for computing dependency}
+\end{itemize}
+\end{center}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Plan for the Schemas Project}
+  \begin{center}
+\includegraphics[height=8cm]{all.png}
+\end{center}
+\end{frame}
+
+
+\begin{frame}[fragile,t]
+\frametitle{{Publications so Far} }
+
+%{Mike Laurence :}
+\small
+\begin{itemize}
+\item<1->{Michael~R. Laurence, Sebastian Danicic, Mark Harman, Rob Hierons, and John
+  Howroyd.\\
+Equivalence of conservative, free, linear program schemas is
+  decidable.\\
+	{\em Theoretical Computer Science}, 290:831--862, January 2003.
+}
+
+
+
+\item<2->{Sebastian Danicic, Chris Fox, Mark Harman, Robert~Mark Hierons, John Howroyd,
+  and Mike Laurence.
+\\ Slicing algorithms are minimal for programs which can be expressed as
+  linear, free, liberal schemas.
+\\ {\em The Computer Journal}, 48(6):737--748, 2005.}
+
+\item<3->{{Sebastian Danicic, Mark Harman, Robert~Mark Hierons, John Howroyd, and Mike
+  Laurence.\\
+Equivalence of linear, free, liberal, structured program schemas is
+  decidable in polynomial time.\\
+{\em Theoretical Computer Science}, 2006.}}
+
+
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Mike -- Over to you!}
+  \begin{center}
+\includegraphics[height=8cm]{mike.jpg}
+\end{center}
+\end{frame}
+
+
+
+\end{document}
+
+
+\begin{frame}[t,fragile]
+  \frametitle{}
+
+\end{frame}
+
+
+\begin{frame}[fragile]
+  \frametitle{An Algorithm For Finding Primes Numbers.}
+\begin{semiverbatim}
+\uncover<1->{\alert<0>{int main (void)}}
+\uncover<1->{\alert<0>{\{}}
+\uncover<1->{\alert<1>{ \alert<4>{std::}vector<bool> is_prime (100, true);}}
+\uncover<1->{\alert<1>{ for (int i = 2; i < 100; i++)}}
+\uncover<2->{\alert<2>{    if (is_prime[i])}}
+\uncover<2->{\alert<0>{      \{}}
+\uncover<3->{\alert<3>{        \alert<4>{std::}cout << i << " ";}}
+\uncover<3->{\alert<3>{        for (int j = i; j < 100;}}
+\uncover<3->{\alert<3>{             is_prime [j] = false, j+=i);}}
+\uncover<2->{\alert<0>{      \}}}
+\uncover<1->{\alert<0>{ return 0;}}
+\uncover<1->{\alert<0>{\}}}
+\end{semiverbatim}
+  \visible<4->{Note the use of \alert{\texttt{std::}}.}
+\end{frame}
+
+\begin{frame}[fragile]
+
+  \frametitle{The "c becomes one" example}
+
+Which lines of this program affect the final value of z?
+\begin{semiverbatim}
+
+     \alert<4>{while (i<k)
+     \alert<4> \{}
+         \alert<3>{if (c<5)}
+         \alert<3>{\{}
+             \alert<2>{z=7;}
+             \alert<6>{c=y+c;}\only<6>{ what about this statement?}\only<7>{ do we really need it?}
+         \alert<3>{\}}
+         \alert<5>{i=i+1;}
+      \alert<4>{\}}
+\end{semiverbatim}
+
+
+\end{frame}
+
+
+
+\begin{frame}
+  \frametitle{}
+  \begin{center}
+\end{center}
+\end{frame}
+
+
+\begin{frame}[fragile,t]
+
+  \frametitle{The ``c becomes one'' example}
+
+Which lines of this program affect the final value of z?
+\begin{semiverbatim}
+
+     \alert<1->{while (i<k)
+     \alert<1-> \{}
+         \alert<1->{if (c<5)}
+         \alert<1->{\{}
+             \alert<1->{z=7;}
+             {c=y+c;} So, yes We can leave it out.
+         \alert<1->{\}}
+         \alert<1->{i=i+1;}
+      \alert<1->{\}}
+\end{semiverbatim}
+\end{frame}

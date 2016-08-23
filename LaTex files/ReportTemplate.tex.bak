@@ -1,0 +1,390 @@
+\documentclass[a4paper,12pt]{book}
+
+\usepackage{times,a4wide}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{epstopdf}
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+\usepackage[round]{natbib}
+\usepackage{html}
+\title{A Welsh {\em Hello World} Program}
+\author{Sebastian Danicic\\Supervisor: Professor Heinrich Wormold}
+\date{\today}                                           % Activate to display a given date or no date
+
+\begin{document}
+\maketitle
+\def\thepage{\roman{page}}
+\part{The Report}
+\chapter*{Abstract}
+This project is the first to produce a `Hello World'
+program in Welsh. 
+
+\newpage
+
+\chapter*{Acknowledgements}
+I am hugely grateful to the people who helped me.
+Thank you darling mother for giving birth to me. Without you and daddy this
+project would not have been possible.
+
+I would also like to thank Professor Heinrich Wormold for his expert
+tuition in Java and Welsh.
+
+I would like to thank my Cat, Dennis, for help with Java programming and to last
+but not least to the Merlin the Wizard for  leading  me to a golden age 
+of peace, righteousness, and prosperity.
+\begin{center}
+\includegraphics[height=70mm]{MERLIN.jpg}
+\end{center}
+\tableofcontents
+\listoffigures
+\listoftables
+
+\chapter{Introduction}
+\def\thepage{\arabic{page}}
+\setcounter{page}{1}
+
+\section{The Hello World Problem}
+
+
+In this project I am attempting to solve the well-know hello world problem. In
+this problem we tried to make the computer display  {\bf hello World} on the
+screen using the Object oriented programming language, Java. Although there have
+been many solutions in other languages including
+Mandarin~\cite{KuhnScottAndreev2008}, we believe this is the first solution to
+the problem in Welsh.
+
+
+
+%\includegraphics[height=60mm]{mugshot.jpg}
+\begin{center}
+\includegraphics[height=60mm]{brain.jpg}
+\end{center}
+
+\newpage
+\section{Why my problem is interesting}
+This problem is very interesting as there have been many proposed solutions
+all of which have their drawbacks. These are discussed further in
+In Chapter~\ref{chap:background} on page \pageref{chap:background}. 
+
+\section{The layout of my report}
+You probably write this section last (but before the abstract).
+
+In Chapter~\ref{chap:background} on page \pageref{chap:background} 
+I discuss the background to my Project.
+
+In Chapter~\ref{chap:seleval}, Page \pageref{chap:background} I evaluate my
+project. In Section~\ref{sec:outcomes} I discuss how well I met the original
+goals of my project.
+
+
+
+\chapter{Background}
+\label{chap:background}
+
+\section{The Problem being solved}
+\label{sec:probsolv}
+
+The aim of the project is to produce a Welsh version of the hello world
+program.   In the process we hope to forge links between digital technologies
+and artistic practice. We will develop original theories, new departures in the
+technological arts and pioneering, and commercially viable, to produce a
+sustainable software product.   In order to complete the project I will
+undertake research into work from the culture industries, film production,
+design consultancies, museums and galleries, interactive media content
+providers, software development houses, and hardware design laboratories - to
+explore and extend the use of today's digital technology and to define and
+implement the art and design technologies of tomorrow.  
+
+\begin{figure}
+\begin{center}
+\includegraphics[height=100mm]{UML_Class-diagram.jpg}
+\end{center}
+\caption{Pretty Picture}
+\label{fig:pretty}
+\end{figure}
+
+In Figure~\ref{fig:pretty} page~\pageref{fig:pretty} is a pretty picture.
+
+\subsection{How other People Have Solved it}
+\label{sub:other}
+
+\subsubsection{Hello World in C}
+In Section~\ref{sub:other} I talk about how other people have so
+
+
+The first known instance of the usage of the words "hello" and "world" together
+in computer literature occurred earlier, in Kernighan's 1972 Tutorial
+Introduction to the Language~\cite{KuhnScottAndreev2008}, with the following
+code:
+
+\begin{verbatim}
+main( ) {
+  extrn a, b, c;
+  putchar(a); putchar(b); putchar(c); putchar('!*n');
+}
+a 'hell';
+b 'o, w';
+c 'orld';
+\end{verbatim}
+
+
+
+Apart from not being in Welsh, its obtuse structure clearly fails to forge links
+between digital technologies and artistic practice.
+
+(Part of the learning objectives of level 3 (which is where you are now) is the
+exercise of critical judgement; it is up to you to judge critically what
+appropriate titles and wordings for your report are, based on academic reports
+you have read during your course of study.)
+
+
+\subsubsection{Hello World in Erlang}
+In 1805 Gottfried Llantwit-Major \cite{BookB} produced the first Erlang
+version:
+
+\begin{verbatim}
+-module(hello).
+
+-export([hello/0]).
+
+hello() ->
+   io:format("Sut dach chi?", []).
+\end{verbatim}
+
+Although this is very good attempt, as the reader will observe, it produces
+Welsh output. Unfortunately however, it does not translate correctly to 
+Hello World.
+
+\subsubsection{A more Goldsmithian Example}
+\begin{verbatim}
+#include <stdio.h>
+    main(){int i,n[]={(((1<<1)<<(1<<1)<<(1<<
+    1)<<(1<<(1>>1)))+((1<<1)<<(1<<1))), (((1
+    <<1)<<(1<<1)<<(1<<1)<<(1<<1))-((1<<1)<<(
+    1<<1)<<(1<<1))+((1<<1)<<(1<<(1>>1)))+ (1
+    <<(1>>1))),(((1<<1)<<(1<<1)<<(1<<1)<< (1
+    <<1))-((1<<1)<<(1<<1)<<(1<<(1>>1)))- ((1
+    <<1)<<(1<<(1>>1)))),(((1<<1)<<(1<<1)<<(1
+    <<1)<<(1<<1))-((1<<1)<<(1<<1)<<(1<<(1>>1
+    )))-((1<<1)<<(1<<(1>>1)))),(((1<<1)<< (1
+    <<1)<<(1<<1)<<(1<<1))-((1<<1)<<(1<<1)<<(
+    1<<(1>>1)))-(1<<(1>>1))),(((1<<1)<<(1<<1
+    )<<(1<<1))+((1<<1)<<(1<<1)<<(1<<(1>>1)))
+    -((1<<1)<<(1<<(1>>1)))),((1<<1)<< (1<<1)
+    <<(1<<1)),(((1<<1)<<(1<<1)<<(1<<1)<<(1<<
+    1))-((1<<1)<<(1<<1))-(1<<(1>>1))),(((1<<
+    1)<<(1<<1)<<(1<<1)<<(1<<1))-((1<<1)<< (1
+    <<1)<<(1<<(1>>1)))-(1<<(1>>1))), (((1<<1
+    )<<(1<<1)<<(1<<1)<<(1<<1))- ((1<<1)<< (1
+    <<1)<<(1<<(1>>1)))+(1<<1)), (((1<<1)<< (
+    1<<1)<<(1<<1)<< (1<<1))-((1<<1)<< (1<<1)
+    <<(1<<(1>>1)))-((1<<1) <<(1<< (1>>1)))),
+    (((1<<1)<< (1<<1)<<(1<<1)<< (1<<1))- ((1
+    <<1)<<(1<<1)<<(1<<1))+((1<<1)<< (1<<(1>>
+    1)))), (((1<<1)<<(1<<1) <<(1<<1))+(1<<(1
+    >>1))),(((1<<1)<<(1<<1))+((1<<1)<< (1<<(
+    1>>1))) + (1<< (1>>1)))}; for(i=(1>>1);i
+    <(((1<<1) <<(1<<1))+((1 <<1)<< (1<<(1>>1
+    ))) + (1<<1)); i++) printf("%c\n",n[i]); }
+\end{verbatim}
+
+
+This solution typically involves a group of participants standing or sitting
+together in a circle, with a side-lying, empty bottle on the ground at their
+epicentre. The bottle functions like the spinner for a standard board game, with
+its opening serving as the pointer. Here we  explore alternative or additional
+overlays that can be applied including bin-the-spottle, spin-the-bottle, hi-fi,
+show you mine if you show me yours, seven minutes in heaven, hopes, fears and
+dreams and sight for sore eyes.
+
+\section{The Science and Technology needed to solve it}
+\subsection{In various sections, describing the technological tools you'll use}
+
+We conduct an exploration of analog and digital bodies, using a range of
+technologies to remap the solid and obdurate real of bodies into the dispersions
+and virtualities of the digital, and then back again into real physical spaces.
+The "Hello World" of the title means at least three things.
+
+Firstly, the pasting of viewpoints together, the suturing of the subject into
+the avatar. Secondly, paste as glue, as half-liquid and half solid, as a
+materiality of renewable and infinite pliability. This is the chora of the
+avatar, the body matrix that is less a framework than a smearing of paste. And
+thirdly, paste as pasty and dis/comfortable substance, paste as slimy and
+dripping. While this abjection is already implicit in paste as glue, the
+pastiness of paste involves the projection and dreaming through of the avatar,
+the inhabitation of avatar bodies and the emptying of real bodies into the
+avatar.
+
+"Hello World" comes out in avatar motions and behaviours. Firstly, these are
+formed by symbolic orders, presenting surfaces to read in terms of sexuality,
+power, emotion, and other projections. At the same time, the pasty avatar body
+tends towards collapse and abjection. Work on the avatar becomes a choreography
+of exposure and rupture, modelling and presenting inconceivable and untenable
+data, within which tensions and relationships are immediate and intimate. One
+might imagine, then, this inconceivable data as a form of organism itself: as
+part of a natural world or a world already given; out of this we might think
+through new ideas of landscape, wilderness, hard ecology, the earth itself.
+
+The project will theorise and demonstrate these topics. The first part
+discusses theoretical frameworks. We will introduce the topic of
+dismemberment and telepresence in terms of the presence or appearance of
+abjection in Second Life avatars. He will connect this to the epistemology of
+emptiness vis-a-vis sheave theory and Buddhist philosophy, and then to the
+problems of motion and behaviour of avatars. Sandy Baldwin will discuss the
+topography of limits in Second Life, both body limits and spatial limits, an
+connect this to issues of the hunt and animal display.
+
+We will also discuss the dynamics of performance and audience in Second Life.
+The second part of the project will show off Sondheim and Baldwin's approach to
+re-mapping live bodies into Second Life performances, including: video and other
+examples of motion capture and scanning; intermediate processing of files (e.g.
+editing .bvh data or working with Blender); and then the resulting works,
+including documents of Second Life performances and re-mappings back into "first
+life" spaces with dancers and other live performers. The final part of the
+project will include avatar performance by Sondheim, Baldwin, and other
+participants in Second Life.
+
+ \chapter{Project Description}
+\section{Introduction} \begin{figure} \begin{center} \fbox{ This text is part of
+a figure. It is centred (note the American spelling!).} \vspace{.5in}
+
+Latex will put the figure at the place most appropriate for it, \\according to publishing convention, automatically.
+\end{center}
+\caption{This is how you make a figure in your document.}
+\end{figure}
+
+
+\section{Textual Description of what you have built}
+\subsection{Divided into subsections}
+\ldots for easy understanding.
+\subsection{Block Diagram}
+\includegraphics[height=60mm]{one.pdf}
+
+
+
+\section{Work Plan}
+Describe the work plan you proposed in your second deliverable and assess whether you stuck to it.
+
+\chapter{System Evaluation}
+\section{How my system/software can be tested}
+\section{The results of testing my system/software}
+\section{How I might improve my project based on this evaluation}
+
+\chapter{Summary and Conclusions}
+\section{Summary of the Project}
+\subsection{Goals}
+\begin{table}
+\begin{center}
+\begin{tabular}{|cc|c|}
+\hline
+Part 1 & Part 2 & Part 3\\\hline
+Result A & Result B & Total \\\hline
+\end{tabular}
+\end{center}
+\caption{This is how you make a table in your document.}
+\end{table}
+
+The project aimed to\ldots
+\subsection{Outcomes}
+The project achieved\ldots
+\section{Conclusions Drawn from the Project}
+This was a fabulous/good/bad/terrible way to address this task. Here's why\ldots
+
+\chapter{Project Self-Evaluation}
+\label{chap:seleval}
+\section{Introduction}
+In this chapter, you reflect on what you did in your project and how well you did it.
+\section{Project outcomes}
+\label{sec:outcomes}
+Did you meet the outcomes you said you would? If not, why not? How could you have done better?
+\section{Project planning}
+Did your planning work well? How could you improve it?
+\section{Self-evaluation}
+What you learned about yourself in doing this project.
+
+
+
+\part{appendix}
+\chapter{Java Program}
+\begin{verbatim}
+class helloworld
+{
+        public static void main(String args[])
+        {
+	
+        }
+
+}
+\end{verbatim}
+\section{Useful Information}
+\subsection{Help with \LaTeX}
+You can get help with \LaTeX and BibTex from 
+\htmladdnormallink{http://www.math.harvard.edu/texman/}{http://www.math.harvard.edu/texman/}
+
+\cite{KuhnScottAndreev2008}, and from {\tt http://en.wikibooks.org/wiki/LaTeX}.
+
+
+
+
+
+\begin{quote} \citet{ArticleA} argue that nothing is true. You use this if you
+need to make the authors part of your sentence. Look at the {\tt .tex} file to
+see how this is done. 
+\end{quote}
+
+The second is as follows:
+\begin{quote}
+
+It has been argued that nothing is true \citep{ArticleA}. You use this if you
+don't mention the authors in your sentence. Look at the {\tt .tex} file to see
+how this is done.
+
+\end{quote}
+When you do this, you must have a definition for each item in your {\tt DoCReport.bib} file. There is an example to help you, for journal articles \citep{ArticleA}, books \citep{BookB}, chapters in collection books \citep{CollectedC}, and miscellaneous things like web sites \citep{MiscD}. You can make up the keys for these things (that is, {\tt ArticleA}, {\it etc.}); you just need to make sure that each is unique. It doesn't matter what order to place the entries in the {\tt .bib} file.
+
+If you compare the entries in the {\tt .bib} file, you'll see that each is
+rendered differently into a bibliography entry at the back of the formatted
+report. \LaTeX and BibTeX handle this correctly on your behalf -- but make sure you read error messages and act on them, because the software can't correct any errors you make!
+
+
+
+\begin{verbatim}
+\begin{quote} \citet{ArticleA} argue that nothing is true. You use this if you
+need to make the authors part of your sentence. Look at the {\tt .tex} file to
+see how this is done. 
+\end{quote}
+
+The second is as follows:
+\begin{quote}
+
+It has been argued that nothing is true \citep{ArticleA}. You use this if you
+don't mention the authors in your sentence. Look at the {\tt .tex} file to see
+how this is done.
+
+\end{quote}
+
+When you do this, you must have a definition for each item in your {\tt
+DoCReport.bib} file. There is an example to help you, for journal articles
+\citep{ArticleA}, books \citep{BookB}, chapters in collection books
+\citep{CollectedC}, and miscellaneous things like web sites \citep{MiscD}. You
+can make up the keys for these things (that is, {\tt ArticleA}, {\it etc.}); you
+just need to make sure that each is unique. It doesn't matter what order to
+place the entries in the {\tt .bib} file.
+
+If you compare the entries in the {\tt .bib} file, you'll see that each is
+rendered differently into a bibliography entry at the back of the formatted
+report. \LaTeX and BibTeX handle this correctly on your behalf -- but make sure
+you read error messages and act on them, because the software can't correct any
+errors you make! \end{verbatim}
+
+
+\subsection{An important thing to note!!}
+
+LaTeX deals carefully with all the forward and backward referencing in your document ({\it e.g.,} tables of contents, {\it etc.}). This means that you sometimes need to run it as many as three times before all the inter-dependencies are sorted out. Make sure you read the output of the program, which will tell you when you need to run it again.
+
+
+
+\bibliographystyle{apalike}
+\bibliography{DoCReport}
+
+\end{document}  
